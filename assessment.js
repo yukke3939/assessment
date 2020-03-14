@@ -49,6 +49,13 @@ assessmentButton.onclick = () => {
   tweetDivided.appendChild(script);
 };
 
+
+userNameInput.onkeydown = (event) => {
+    if (event.key === "Enter"){
+        assessmentButton.onclick();
+    }
+};
+
 const answers = [
   '{userName}のいいところは声です。{userName}の特徴的な声はみなを惹きつけ、心に残ります。',
   '{userName}のいいところはまなざしです。{userName}に見つめられた人は、気になって仕方がないでしょう。',
@@ -65,7 +72,8 @@ const answers = [
   '{userName}のいいところは好奇心です。新しいことに向かっていく{userName}の心構えが多くの人に魅力的に映ります。',
   '{userName}のいいところは気配りです。{userName}の配慮が多くの人を救っています。',
   '{userName}のいいところはその全てです。ありのままの{userName}自身がいいところなのです。',
-  '{userName}のいいところは自制心です。やばいと思ったときにしっかりと衝動を抑えられる{userName}が皆から評価されています。'
+  '{userName}のいいところは自制心です。やばいと思ったときにしっかりと衝動を抑えられる{userName}が皆から評価されています。',
+  '{userName}のいいところは優しさです。{userName}の優しい雰囲気や立ち振る舞いに多くの人が癒やされています。'
 ];
 
 /**
